@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/chat";
+const API_URL = "https://buildwithbhumi-server-2.onrender.com/chat";
 
 export async function askGemini(message) {
   try {
