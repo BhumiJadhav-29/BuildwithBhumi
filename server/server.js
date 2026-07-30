@@ -57,11 +57,10 @@ Reply professionally and briefly.
 User: ${message}
 `;
 
-   const response = await ai.models.generateContent({
-  model: "gemini-2.5-flash-lite",
+  const response = await ai.models.generateContent({
+model: "gemini-2.0-flash"
   contents: prompt,
 });
-
     res.json({
       reply: response.text,
     });
